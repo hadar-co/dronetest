@@ -1,0 +1,16 @@
+kind: pipeline
+type: docker
+name: default
+
+steps:
+- name: datree-policy-check  
+  image: datree/drone-datree
+  settings:
+    token:
+      from_secret: datree_token
+    path:
+    cliArguments: -s 1.24.0
+    isHelmChart: false
+    helmArguments: 
+    tags:
+    - latest
