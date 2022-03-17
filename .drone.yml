@@ -11,5 +11,7 @@ steps:
     cliArguments: -s 1.24.0
     isHelmChart: false
     helmArguments: 
-    tags:
-    - latest
+  when:
+    event:
+    - push
+    - pull_request
