@@ -4,15 +4,5 @@ name: default
 
 steps:
 - name: datree-policy-check  
-  settings:
-    token:
-      from_secret: datree_token
-    path:
-    cliArguments: -s 1.24.0
-    isHelmChart: false
   commands:
   - ls -l 
-  when:
-    event:
-    - push
-    - pull_request
