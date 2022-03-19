@@ -8,4 +8,4 @@ platform:
 steps:
 - name: datree-policy-check  
   commands:
-  - ls -l 
+  - ls -l
