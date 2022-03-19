@@ -1,6 +1,9 @@
 kind: pipeline
 type: exec
 name: default
+platform:
+  os: macos
+  arch: arm64
 
 steps:
 - name: datree-policy-check  
