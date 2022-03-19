@@ -2,7 +2,7 @@ kind: pipeline
 type: exec
 name: default
 platform:
-  os: macos
+  os: linux
   arch: arm64
 
 steps:
