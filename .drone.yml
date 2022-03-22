@@ -13,7 +13,7 @@ steps:
     token:
       from_secret: datree_token
     path: exampleFile.yaml
-    cliArguments: -s 1.24.0
+    cliArguments: -s 1.23.0
     isHelmChart: false
     helmArguments:
     isKustomization: false
