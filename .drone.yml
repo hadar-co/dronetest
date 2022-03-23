@@ -12,11 +12,11 @@ steps:
   settings:
     token:
       from_secret: datree_token
-    path: exampleFile.yaml
+    path: ./kustomize
     cliArguments: -s 1.23.0
     isHelmChart: false
     helmArguments:
-    isKustomization: false
+    isKustomization: true
     kustomizeArguments:
 
   when:
