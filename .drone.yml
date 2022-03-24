@@ -3,7 +3,7 @@ type: docker
 name: default
 
 platform:
-  os: macos
+  os: linux
   arch: amd64
 
 steps:
