@@ -12,11 +12,11 @@ steps:
   settings:
     token:
       from_secret: datree_token
-    path: "kustomize"
-    cliArguments: -s 1.23.0
-    isHelmChart: false
+    path: "chart"
+    cliArguments: -s 1.22.0
+    isHelmChart: true
     helmArguments:
-    isKustomization: true
+    isKustomization: false
     kustomizeArguments:
 
   when:
