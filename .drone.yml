@@ -8,7 +8,7 @@ platform:
 
 steps:
 - name: datree-policy-check  
-  image: datree/drone-datree
+  image: hadarco/test
   settings:
     token:
       from_secret: datree_token
