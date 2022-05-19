@@ -22,4 +22,3 @@ steps:
     event:
     - push
     - pull_request
-
