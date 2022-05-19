@@ -17,7 +17,6 @@ steps:
     isHelmChart: true
     helmArguments:
     isKustomization: false
-    kustomizeArguments:
 
   when:
     event:
