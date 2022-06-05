@@ -12,11 +12,7 @@ steps:
   settings:
     token:
       from_secret: datree_token
-    path: "chart"
-    cliArguments: -s 1.22.0
-    isHelmChart: true
-    helmArguments:
-    isKustomization: false
+    path: "exampleFile.yaml"
 
   when:
     event:
