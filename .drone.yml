@@ -13,7 +13,6 @@ steps:
     token:
       from_secret: datree_token
     path: "exampleFile.yaml"
-    cliArguments: "-s 1.22.0"
 
   when:
     event:
