@@ -1,0 +1,21 @@
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+    
+env:
+  DATREE_TOKEN: ${{ secrets.DATREE_TOKEN }} 
+
+jobs:
+  imgbuild:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+      
+      - name: datree
+        uses: datreeio/action-datree@main
+        with:
+          path: 'argoapp.yaml'
+          cliArguments: "--schema-location https://raw.githubusercontent.com/datreeio/CRDs-catalog/main/argoproj.io/{{ .ResourceKind }}_{{ .ResourceAPIVersion }}.json"
