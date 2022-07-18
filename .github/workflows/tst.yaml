@@ -19,3 +19,4 @@ jobs:
         with:
           path: 'argoapp.yaml'
           cliArguments: "--schema-location https://raw.githubusercontent.com/datreeio/CRDs-catalog/main/argoproj.io/{{ .ResourceKind }}_{{ .ResourceAPIVersion }}.json"
+
